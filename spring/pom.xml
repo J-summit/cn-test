@@ -7,9 +7,20 @@
         <groupId>cn-lansky</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-cache</module>
+        <module>spring-threadpool</module>
+        <module>spring-data</module>
+        <module>spring-web</module>
+        <module>spring-bean</module>
+        <module>spring-ioc</module>
+        <module>spring-mvc</module>
+        <module>spring-aop-demo</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>thread</artifactId>
+    <artifactId>spring</artifactId>
 
 
 </project>

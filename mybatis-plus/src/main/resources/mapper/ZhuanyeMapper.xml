@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.lantian.dao.TestDao">    <!-- 命名空间，可以随意些，只要不冲突 -->
+    <!-- 对象映射 -->
+    <resultMap type="cn.lantian.entity.zhuanye" id="zhuanyeRM">
+        <id property="zid" column="zid"/><!-- property="id" 实体对象的属性；column="id" 结果集字段 -->
+        <result property="major" column="major"/>
+        <result property="age" column="age1"/>
+        <collection property="personList" resultMap="people">
+        </collection>
+    </resultMap>
+    <resultMap id="people" type="cn.lantian.entity.Person">
+        <id property="id" column="ID"/><!-- property="id" 实体对象的属性；column="id" 结果集字段 -->
+        <result property="pid" column="pid"></result>
+        <result property="userName" column="userName"/>
+        <result property="age" column="age"/>
+
+    </resultMap>
+
+    <select id="selectTest" resultMap="zhuanyeRM">
+        SELECT zid,major,z.age as age1,p.* from zhuanye z left join person p on z.zid = p.pid
+    </select>
+
+    <select id="pageHelperTest" resultMap="zhuanyeRM">
+        SELECT zid,major,z.age as age1,p.* from zhuanye z left join person p on z.zid = p.pid
+    </select>
+</mapper>

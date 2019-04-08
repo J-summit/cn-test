@@ -1,0 +1,8 @@
+1.Application
+2.BeanDefinition
+spring IOC管理各种bean对象及相互关系
+Bean对象在spring实现中以beanDefintion来描述
+
+3 ApplicationContextAware 
+setApplicationContext
+获取IOC容器

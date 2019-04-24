@@ -9,6 +9,7 @@ public class Benz implements Car {
     public Benz() {
     }
 
+    @Override
     public String getName() {
         return "Benz";
     }

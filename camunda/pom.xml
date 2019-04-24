@@ -8,20 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <packaging>pom</packaging>
-    <modules>
-        <module>spring-cache</module>
-        <module>spring-threadpool</module>
-        <module>spring-data</module>
-        <module>spring-web</module>
-        <module>spring-bean</module>
-        <module>spring-ioc</module>
-        <module>spring-mvc</module>
-        <module>spring-aop-demo</module>
-        <module>spring-transactions</module>
-    </modules>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring</artifactId>
+    <artifactId>camunda</artifactId>
 
 
 </project>

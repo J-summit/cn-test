@@ -27,7 +27,6 @@ public class TaskExecutorConfig {
         pool.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         ThreadFactoryBuilder threadFactory = new ThreadFactoryBuilder();
         threadFactory.setUncaughtExceptionHandler(new ExceptHand());
-
         threadFactory.setNameFormat("google-gauava%d");
 
         pool.setThreadFactory(threadFactory.build());

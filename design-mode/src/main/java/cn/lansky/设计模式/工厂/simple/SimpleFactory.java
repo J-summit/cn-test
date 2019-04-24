@@ -27,4 +27,15 @@ public class SimpleFactory {
             return null;
         }
     }
+
+    public Car getCar1(String clazz) throws Exception {
+        Car car = (Car) Class.forName(clazz).newInstance();
+        return car;
+    }
+
+    public Car getCar2(CarImpl type) throws Exception {
+        Car car = (Car) Class.forName(type.getClazzUrl()).newInstance();
+        return car;
+    }
+
 }

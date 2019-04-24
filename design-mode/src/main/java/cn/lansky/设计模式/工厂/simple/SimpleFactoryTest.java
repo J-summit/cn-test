@@ -12,8 +12,8 @@ public class SimpleFactoryTest {
     public SimpleFactoryTest() {
     }
 
-    public static void main(String[] args) {
-        Car car = (new SimpleFactory()).getCar("Audi");
+    public static void main(String[] args) throws Exception {
+       Car car = new SimpleFactory().getCar2(CarImpl.Audi);
         System.out.println(car.getName());
     }
 }

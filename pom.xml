@@ -21,6 +21,8 @@
         <module>design-mode</module>
         <module>fenbushi</module>
         <module>Data-structure</module>
+        <module>javabean</module>
+        <module>camunda</module>
     </modules>
     <packaging>pom</packaging>
 

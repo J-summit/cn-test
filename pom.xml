@@ -23,6 +23,8 @@
         <module>Data-structure</module>
         <module>javabean</module>
         <module>camunda</module>
+        <module>redis</module>
+        <module>mybatis</module>
     </modules>
     <packaging>pom</packaging>
 

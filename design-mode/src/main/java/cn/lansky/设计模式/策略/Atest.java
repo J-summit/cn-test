@@ -18,6 +18,7 @@ public class Atest {
     }
 
     public void setB1(BigDecimal b1) {
+
         this.b1 = b1;
     }
 }

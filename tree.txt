@@ -1,0 +1,1083 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for mybatis-generatorcode:mybatis-generatorcode:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: mysql:mysql-connector-java:jar -> duplicate declaration of version 5.1.47 @ line 67, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.slf4j:slf4j-nop:jar -> duplicate declaration of version 1.7.25 @ line 78, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] cn-lansky
+[INFO] thread
+[INFO] quartz-helloword
+[INFO] quartz-base
+[INFO] quartz-springboot
+[INFO] mybatis-plus
+[INFO] mybatis-generatorcode
+[INFO] spring
+[INFO] spring-cache
+[INFO] spring-threadpool
+[INFO] jvm
+[INFO] web-socket
+[INFO] jdk-api
+[INFO] socket
+[INFO] maven_
+Downloading: http://maven.aliyun.com/nexus/content/groups/public/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.pom
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cn-lansky 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ cn-lansky ---
+[INFO] cn-lansky:cn-lansky:pom:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thread 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ thread ---
+[INFO] cn-lansky:thread:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building quartz-helloword 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ quartz-helloword ---
+[INFO] cn-lansky:quartz-helloword:pom:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building quartz-base 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ quartz-base ---
+[INFO] cn-lansky:quartz-base:jar:1.0-SNAPSHOT
+[INFO] +- org.quartz-scheduler:quartz:jar:2.3.0:compile
+[INFO] |  +- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |  +- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] |  +- com.zaxxer:HikariCP-java6:jar:2.3.13:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.quartz-scheduler:quartz-jobs:jar:2.2.1:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building quartz-springboot 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ quartz-springboot ---
+[INFO] cn-lansky:quartz-springboot:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-quartz:jar:2.0.7.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework:spring-context-support:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-tx:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.quartz-scheduler:quartz:jar:2.3.0:compile
+[INFO] |     \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.6.RELEASE:compile
+[INFO] |  +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |  \- org.springframework:spring-jdbc:jar:5.0.10.RELEASE:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.26:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-cache:jar:2.0.6.RELEASE:compile
+[INFO] |  \- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-redis:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.data:spring-data-redis:jar:2.0.11.RELEASE:compile
+[INFO] |  |  +- org.springframework.data:spring-data-keyvalue:jar:2.0.11.RELEASE:compile
+[INFO] |  |  |  \- org.springframework.data:spring-data-commons:jar:2.0.11.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-oxm:jar:5.0.10.RELEASE:compile
+[INFO] |  \- io.lettuce:lettuce-core:jar:5.0.5.RELEASE:compile
+[INFO] |     +- io.projectreactor:reactor-core:jar:3.1.10.RELEASE:compile
+[INFO] |     |  \- org.reactivestreams:reactive-streams:jar:1.0.2:compile
+[INFO] |     +- io.netty:netty-common:jar:4.1.29.Final:compile
+[INFO] |     +- io.netty:netty-transport:jar:4.1.29.Final:compile
+[INFO] |     |  +- io.netty:netty-buffer:jar:4.1.29.Final:compile
+[INFO] |     |  \- io.netty:netty-resolver:jar:4.1.29.Final:compile
+[INFO] |     \- io.netty:netty-handler:jar:4.1.29.Final:compile
+[INFO] |        \- io.netty:netty-codec:jar:4.1.29.Final:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mybatis-plus 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ mybatis-plus ---
+[INFO] cn-lansky:mybatis-plus:jar:1.0-SNAPSHOT
+[INFO] +- com.baomidou:mybatis-plus-boot-starter:jar:3.0.6:compile
+[INFO] |  +- com.baomidou:mybatis-plus:jar:3.0.6:compile
+[INFO] |  |  +- com.baomidou:mybatis-plus-extension:jar:3.0.6:compile
+[INFO] |  |  |  +- com.baomidou:mybatis-plus-core:jar:3.0.6:compile
+[INFO] |  |  |  |  \- com.baomidou:mybatis-plus-annotation:jar:3.0.6:compile
+[INFO] |  |  |  +- org.mybatis:mybatis-spring:jar:1.3.2:compile
+[INFO] |  |  |  \- org.mybatis:mybatis:jar:3.4.6:compile
+[INFO] |  |  \- com.baomidou:mybatis-plus-generator:jar:3.0.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:5.0.10.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-tx:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework.boot:spring-boot-configuration-processor:jar:2.0.6.RELEASE:optional
+[INFO] +- mysql:mysql-connector-java:jar:5.1.26:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] +- com.github.pagehelper:pagehelper:jar:4.2.1:compile
+[INFO] |  \- com.github.jsqlparser:jsqlparser:jar:0.9.5:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mybatis-generatorcode 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ mybatis-generatorcode ---
+[INFO] mybatis-generatorcode:mybatis-generatorcode:jar:1.0-SNAPSHOT
+[INFO] +- com.baomidou:mybatis-plus-extension:jar:3.0.7.1:compile
+[INFO] |  +- com.baomidou:mybatis-plus-core:jar:3.0.7.1:compile
+[INFO] |  |  +- com.baomidou:mybatis-plus-annotation:jar:3.0.7.1:compile
+[INFO] |  |  \- com.github.jsqlparser:jsqlparser:jar:1.3:compile
+[INFO] |  +- org.mybatis:mybatis-spring:jar:1.3.2:compile
+[INFO] |  \- org.mybatis:mybatis:jar:3.4.6:compile
+[INFO] +- org.projectlombok:lombok:jar:1.18.4:compile
+[INFO] +- org.apache.velocity:velocity-engine-core:jar:2.0:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.7:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.freemarker:freemarker:jar:2.3.9:compile
+[INFO] +- com.ibeetl:beetl:jar:2.9.6:compile
+[INFO] |  \- org.antlr:antlr4-runtime:jar:4.2:compile
+[INFO] |     +- org.abego.treelayout:org.abego.treelayout.core:jar:1.0.1:compile
+[INFO] |     \- org.antlr:antlr4-annotations:jar:4.2:compile
+[INFO] +- org.springframework:spring-core:jar:5.1.3.RELEASE:compile
+[INFO] |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.47:compile
+[INFO] +- org.slf4j:slf4j-nop:jar:1.7.25:test
+[INFO] +- com.github.noraui:ojdbc7:jar:12.1.0.2:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ spring ---
+[INFO] cn-lansky:spring:pom:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-cache 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ spring-cache ---
+[INFO] cn-lansky:spring-cache:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-cache:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-context-support:jar:5.0.10.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-redis:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.data:spring-data-redis:jar:2.0.11.RELEASE:compile
+[INFO] |  |  +- org.springframework.data:spring-data-keyvalue:jar:2.0.11.RELEASE:compile
+[INFO] |  |  |  \- org.springframework.data:spring-data-commons:jar:2.0.11.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-tx:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-oxm:jar:5.0.10.RELEASE:compile
+[INFO] |  \- io.lettuce:lettuce-core:jar:5.0.5.RELEASE:compile
+[INFO] |     +- io.projectreactor:reactor-core:jar:3.1.10.RELEASE:compile
+[INFO] |     |  \- org.reactivestreams:reactive-streams:jar:1.0.2:compile
+[INFO] |     +- io.netty:netty-common:jar:4.1.29.Final:compile
+[INFO] |     +- io.netty:netty-transport:jar:4.1.29.Final:compile
+[INFO] |     |  +- io.netty:netty-buffer:jar:4.1.29.Final:compile
+[INFO] |     |  \- io.netty:netty-resolver:jar:4.1.29.Final:compile
+[INFO] |     \- io.netty:netty-handler:jar:4.1.29.Final:compile
+[INFO] |        \- io.netty:netty-codec:jar:4.1.29.Final:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-threadpool 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ spring-threadpool ---
+[INFO] cn-lansky:spring-threadpool:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] +- com.google.guava:guava:jar:24.0-jre:compile
+[INFO] |  +- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] |  +- org.checkerframework:checker-compat-qual:jar:2.0.0:compile
+[INFO] |  +- com.google.errorprone:error_prone_annotations:jar:2.1.3:compile
+[INFO] |  +- com.google.j2objc:j2objc-annotations:jar:1.1:compile
+[INFO] |  \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.14:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jvm 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ jvm ---
+[INFO] cn-lansky:jvm:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building web-socket 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ web-socket ---
+[INFO] cn-lansky:web-socket:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile
+[INFO] |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  +- org.springframework:spring-web:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |     +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |     \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-websocket:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:5.0.10.RELEASE:compile
+[INFO] |  \- org.springframework:spring-websocket:jar:5.0.10.RELEASE:compile
+[INFO] +- com.alibaba:fastjson:jar:1.2.54:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  \- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jdk-api 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ jdk-api ---
+[INFO] cn-lansky:jdk-api:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building socket 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ socket ---
+[INFO] cn-lansky:socket:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building maven_ 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ maven_ ---
+[INFO] cn-lansky:maven_:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.6.RELEASE:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |     \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-actuator:jar:2.0.6.RELEASE:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-aop:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:5.0.10.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:runtime
+[INFO] |  \- io.micrometer:micrometer-core:jar:1.0.7:compile
+[INFO] |     +- org.hdrhistogram:HdrHistogram:jar:2.1.10:compile
+[INFO] |     \- org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[INFO] +- org.projectlombok:lombok:jar:1.16.22:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:2.0.6.RELEASE:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.6.RELEASE:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO] |  |  \- net.minidev:json-smart:jar:2.3:test
+[INFO] |  |     \- net.minidev:accessors-smart:jar:1.2:test
+[INFO] |  |        \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO] |  +- junit:junit:jar:4.12:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] |  +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:5.0.10.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:5.0.10.RELEASE:compile
+[INFO] |  +- org.springframework:spring-test:jar:5.0.10.RELEASE:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.25:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO] +- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] +- org.slf4j:log4j-over-slf4j:jar:1.7.25:compile
+[INFO] \- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO]    \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] cn-lansky .......................................... SUCCESS [  3.125 s]
+[INFO] thread ............................................. SUCCESS [  0.137 s]
+[INFO] quartz-helloword ................................... SUCCESS [  0.051 s]
+[INFO] quartz-base ........................................ SUCCESS [  0.163 s]
+[INFO] quartz-springboot .................................. SUCCESS [  1.068 s]
+[INFO] mybatis-plus ....................................... SUCCESS [  0.294 s]
+[INFO] mybatis-generatorcode .............................. SUCCESS [  0.249 s]
+[INFO] spring ............................................. SUCCESS [  0.031 s]
+[INFO] spring-cache ....................................... SUCCESS [  0.045 s]
+[INFO] spring-threadpool .................................. SUCCESS [  0.184 s]
+[INFO] jvm ................................................ SUCCESS [  0.033 s]
+[INFO] web-socket ......................................... SUCCESS [  0.067 s]
+[INFO] jdk-api ............................................ SUCCESS [  0.038 s]
+[INFO] socket ............................................. SUCCESS [  0.033 s]
+[INFO] maven_ ............................................. SUCCESS [  0.169 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.546 s
+[INFO] Finished at: 2019-03-09T11:02:19+08:00
+[INFO] Final Memory: 44M/294M
+[INFO] ------------------------------------------------------------------------

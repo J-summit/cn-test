@@ -25,6 +25,8 @@
         <module>camunda</module>
         <module>redis</module>
         <module>mybatis</module>
+        <module>valid</module>
+        <module>beancopy</module>
     </modules>
     <packaging>pom</packaging>
 

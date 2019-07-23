@@ -16,7 +16,12 @@ import java.io.InputStream;
 public class TestMain {
     public static void main(String[] args) throws IOException {
         SqlSession session = getSqlSessionFactory().openSession();
-        session.getMapper(TestMapper.class);
+        TestMapper testMapper =  session.getMapper(TestMapper.class);
+        testMapper.selectBlog(1);
+        Test t1 = new Test();
+        t1.setId(1);
+        t1.setName("tom");
+        testMapper.updatebyId(t1);
         try {
             Test test = session.selectOne(
                     "cn.lansky.demo.TestMapper.selectBlog", 1);
@@ -32,5 +37,13 @@ public class TestMain {
         SqlSessionFactory sqlSessionFactory =
                 new SqlSessionFactoryBuilder().build(inputStream);
         return sqlSessionFactory;
+    }
+
+    public void test1() {
+
+    }
+
+    public int test1(int a) {
+        return 1;
     }
 }

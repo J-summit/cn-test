@@ -10,4 +10,8 @@
     <select id="selectBlog" resultType="cn.lansky.demo.Test">
         select * from test where id = #{id}
     </select>
+
+    <select id="updatebyId">
+        update test set name = #{name} where id = #{id}
+    </select>
 </mapper>

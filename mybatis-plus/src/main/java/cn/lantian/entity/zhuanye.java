@@ -19,7 +19,7 @@ public class zhuanye {
 
     private Integer age;
 
-    private List<Person> personList;
+    private List<People> peopleList;
 
     public zhuanye(Integer zid, String major, Integer age) {
         this.zid = zid;

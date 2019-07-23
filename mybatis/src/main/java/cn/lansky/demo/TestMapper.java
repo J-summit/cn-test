@@ -3,6 +3,12 @@ package cn.lansky.demo;
 public interface TestMapper {
 
     Test selectBlog(int id);
+
+    Test selectByPrimaryKey(Integer userId);
+
+    void updatebyId(Test test);
+
+
 //    int countByExample(TestExample example);
 //
 //    int deleteByExample(TestExample example);

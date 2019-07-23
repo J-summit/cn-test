@@ -1,8 +1,11 @@
 package cn.lantian;
 
+import com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration;
+import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,6 +16,7 @@ import java.util.Properties;
  * @since 2019/1/21 17:48
  */
 @Configuration
+@ConditionalOnClass(MybatisPlusAutoConfiguration.class)
 @MapperScan("cn.lantian.dao")
 public class MybatisPlusConfig {
     /**
@@ -21,6 +25,11 @@ public class MybatisPlusConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
+    }
+
+    @Bean
+    public LogicSqlInjector logicSqlInjector() {
+        return new LogicSqlInjector();
     }
 
 

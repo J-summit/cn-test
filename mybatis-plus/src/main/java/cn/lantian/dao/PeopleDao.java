@@ -1,17 +1,16 @@
 package cn.lantian.dao;
 
-import cn.lantian.entity.Person;
-import cn.lantian.entity.zhuanye;
-
-import java.util.List;
+import cn.lantian.entity.People;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * @author onlyo
  * @since 2019/1/21 21:22
  */
-public interface PeopleDao {
+@Repository
+public interface PeopleDao extends BaseMapper<People> {
 
-    List<zhuanye> lazyLoad();
 
-    List<Person> findById();
+    People findById(Integer id);
 }

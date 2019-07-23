@@ -1,13 +1,15 @@
 package cn.lantian.dao;
 
 
+import cn.lantian.entity.People;
 import cn.lantian.service.TestService;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.yaml.snakeyaml.events.Event;
 
 
 /**
@@ -16,6 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
+@Slf4j
 public class TestDaoTest {
     @Autowired
     private TestDao testDao;
@@ -26,18 +29,16 @@ public class TestDaoTest {
     @Autowired
     private PeopleDao peopleDao;
 
+
     @Test
-    public void test1() {
-        testDao.selectTest(new Page(1, 2)).getRecords().forEach(System.err::println);
+    public void findById() {
+        People byId = peopleDao.findById(1);
+        System.out.println(byId);
     }
 
     @Test
-    public void pageHelperTest() {
-        testService.getList().forEach(System.err::println);
-    }
-
-    @Test
-    public void test2() {
-        peopleDao.lazyLoad();
+    public void findById1() {
+        People byId = peopleDao.selectById(3);
+        log.warn(byId.toString());
     }
 }

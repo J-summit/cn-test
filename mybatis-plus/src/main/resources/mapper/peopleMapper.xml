@@ -4,22 +4,22 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.lantian.dao.PeopleDao">
     <!-- 对象映射 -->
-    <resultMap type="cn.lantian.entity.zhuanye" id="zhuanyeRM">
-        <id property="zid" column="zid"/><!-- property="id" 实体对象的属性；column="id" 结果集字段 -->
-        <result property="major" column="major"/>
-        <result property="age" column="age1"/>
-        <collection property="personList" resultMap="people" select="findById" column="zid">
-        </collection>
-    </resultMap>
-    <resultMap id="people" type="cn.lantian.entity.Person">
+    <!--<resultMap type="cn.lantian.entity.zhuanye" id="zhuanyeRM">-->
+        <!--<id property="zid" column="zid"/>&lt;!&ndash; property="id" 实体对象的属性；column="id" 结果集字段 &ndash;&gt;-->
+        <!--<result property="major" column="major"/>-->
+        <!--<result property="age" column="age1"/>-->
+        <!--<collection property="personList" resultMap="people" select="findById" column="zid">-->
+        <!--</collection>-->
+    <!--</resultMap>-->
+    <resultMap id="people" type="cn.lantian.entity.People">
         <id property="id" column="ID"/><!-- property="id" 实体对象的属性；column="id" 结果集字段 -->
         <result property="pid" column="pid"></result>
         <result property="userName" column="userName"/>
         <result property="age" column="age"/>
     </resultMap>
-    <select id="lazyLoad" resultMap="zhuanyeRM">
-        SELECT * from zhuanye z
-    </select>
+    <!--<select id="lazyLoad" resultMap="zhuanyeRM">-->
+        <!--SELECT * from zhuanye z-->
+    <!--</select>-->
     <select id="findById" parameterType="integer" resultMap="people">
         SELECT * from person where pid = #{pid}
     </select>

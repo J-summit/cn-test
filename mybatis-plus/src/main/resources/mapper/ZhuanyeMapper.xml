@@ -12,7 +12,7 @@
         <collection property="personList" resultMap="people">
         </collection>
     </resultMap>
-    <resultMap id="people" type="cn.lantian.entity.Person">
+    <resultMap id="people" type="cn.lantian.entity.People">
         <id property="id" column="ID"/><!-- property="id" 实体对象的属性；column="id" 结果集字段 -->
         <result property="pid" column="pid"></result>
         <result property="userName" column="userName"/>

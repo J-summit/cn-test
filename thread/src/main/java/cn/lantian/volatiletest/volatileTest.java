@@ -7,9 +7,7 @@ import lombok.Data;
  * @since 2019/1/20 11:08
  */
 @Data
-public class
-
-volatileTest {
+public class volatileTest {
 
     private Integer a;
 

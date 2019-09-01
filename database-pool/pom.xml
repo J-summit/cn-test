@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>beancopy</artifactId>
+    <artifactId>database-pool</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>orika</module>
+        <module>custom-pool</module>
     </modules>
 
 

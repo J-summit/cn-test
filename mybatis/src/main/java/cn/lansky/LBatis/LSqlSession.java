@@ -1,9 +1,5 @@
 package cn.lansky.LBatis;
 
-import org.apache.ibatis.binding.MapperProxy;
-import org.apache.ibatis.executor.Executor;
-import org.apache.ibatis.executor.SimpleExecutor;
-
 import java.lang.reflect.Proxy;
 
 /**
@@ -12,15 +8,22 @@ import java.lang.reflect.Proxy;
  */
 public class LSqlSession {
 
-    private LExecutor executor = new LSimpleExecutor();
-    //TODO configuration
 
-    public <T> T selectOne(String statement, Object parameter) {
-        return executor.query(statement,parameter);
-    }
+	public static void main(String[] args) {
+		Long a =128l;
+		Long b = 128l;
+		System.out.println(a.equals(b));
+	}
 
-    public <T> T getMapper(Class<T> clazz) {
-        return (T) Proxy.newProxyInstance(clazz.getClassLoader(),
-                new Class[]{clazz}, new LMapperProxy(this, clazz));
-    }
+	private LExecutor executor = new LSimpleExecutor();
+	//TODO configuration
+
+	public <T> T selectOne(String statement, Object parameter) {
+		return executor.query(statement, parameter);
+	}
+
+	public <T> T getMapper(Class<T> clazz) {
+		return (T) Proxy.newProxyInstance(clazz.getClassLoader(),
+				new Class[]{clazz}, new LMapperProxy(this, clazz));
+	}
 }

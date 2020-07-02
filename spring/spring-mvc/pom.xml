@@ -15,7 +15,7 @@
 		<spring.version>4.2.7.RELEASE</spring.version>
 		<mybatis.version>3.4.1</mybatis.version>
 		<druid.version>1.0.27</druid.version>
-		<mysql.version>5.1.26</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<version-hibernate.validator>5.0.1.Final</version-hibernate.validator>
 		<version-hibernate.jpa>1.0.1.Final</version-hibernate.jpa>
 		<version-hibernate>4.2.6.Final</version-hibernate>

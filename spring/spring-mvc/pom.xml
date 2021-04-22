@@ -13,7 +13,7 @@
     <artifactId>spring-mvc</artifactId>
 	<properties>
 		<spring.version>4.2.7.RELEASE</spring.version>
-		<mybatis.version>3.4.1</mybatis.version>
+		<mybatis.version>3.5.6</mybatis.version>
 		<druid.version>1.0.27</druid.version>
 		<mysql.version>5.1.26</mysql.version>
 		<version-hibernate.validator>5.0.1.Final</version-hibernate.validator>

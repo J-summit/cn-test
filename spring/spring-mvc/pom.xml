@@ -12,7 +12,7 @@
 
     <artifactId>spring-mvc</artifactId>
 	<properties>
-		<spring.version>4.2.7.RELEASE</spring.version>
+		<spring.version>5.2.22.RELEASE</spring.version>
 		<mybatis.version>3.4.1</mybatis.version>
 		<druid.version>1.0.27</druid.version>
 		<mysql.version>5.1.26</mysql.version>
